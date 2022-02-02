@@ -14,8 +14,7 @@ function App() {
 				headers: {
 					"x-rapidapi-host":
 						"imdb-internet-movie-database-unofficial.p.rapidapi.com",
-					"x-rapidapi-key":
-						"2199f9d855msh1187bcf1a59ad6bp10b524jsn334cf16c9851",
+					"x-rapidapi-key": "",
 				},
 			}
 		)
@@ -40,7 +39,11 @@ function App() {
 	return (
 		<div className="App">
 			<form onSubmit={onSubmit}>
-				<input type="text" placeholder="Type the name of movies..." ref={inputField} />
+				<input
+					type="text"
+					placeholder="Type the name of movies..."
+					ref={inputField}
+				/>
 				<button className="submit">Submit</button>
 			</form>
 
