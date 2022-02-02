@@ -1,38 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@400;500;600&family=Faster+One&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Monoton&family=Montserrat:ital,wght@0,400;0,600;1,300&family=Original+Surfer&family=Permanent+Marker&family=Poiret+One&family=Racing+Sans+One&family=Rubik+Mono+One&family=Single+Day&family=Warnes&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
 .App {
-  text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.print {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form input{
+    width: 30%;
+    padding: 10px;
+    border-radius: 50px;
+    color: #000;
+    border: 8px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  background-color: darkgrey;
 }
 
-.App-link {
-  color: #61dafb;
+form button {
+    padding: 19px;
+    margin: 0 20px;
+    background: transparent;
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes slidebg {
   to {
-    transform: rotate(360deg);
+    background-position:20vw;
   }
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+    box-shadow: -6px 0px 16px 10px;
+    border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  margin: 2rem auto;
+}
+
+
+img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;;
+}
+p {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+span {
+    color: orangered;
+}
+
